@@ -1,14 +1,8 @@
 import createLogger from 'logging';
 
-export class Logger {
-    #log = null;
-
+export class Logger extends createLogger {
     constructor(title) {
-        this.#log = createLogger(title || '¿::?');
-    }
-
-    get logger() {
-        return this.#log;
+        super(title);
     }
 }
 

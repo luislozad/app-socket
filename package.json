@@ -14,7 +14,8 @@
   "dependencies": {
     "body-parser": "^1.19.1",
     "express": "^4.17.2",
-    "logging": "^3.3.0"
+    "logging": "^3.3.0",
+    "mongoose": "^6.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.0",
