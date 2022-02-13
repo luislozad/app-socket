@@ -1,0 +1,16 @@
+{
+  "test": ".*.js$",
+  "jsc": {
+    "parser": {
+      "syntax": "ecmascript"
+    }
+  },
+  "env": {
+    "targets": {
+      "node": 16
+    }
+  },
+  "module": {
+    "type": "commonjs"
+  }
+}

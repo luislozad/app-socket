@@ -1,0 +1,35 @@
+{
+  "name": "server-socket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx webpack --config webpack.config.js",
+    "build-dev": "npm run build && node ./dist/server.js",
+    "dev": "nodemon --watch src --exec \"npm run build-dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "logging": "^3.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.2",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.138",
+    "copy-webpack-plugin": "^10.2.4",
+    "mini-css-extract-plugin": "^2.5.3",
+    "nodemon": "^2.0.15",
+    "swc-loader": "^0.1.15",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
