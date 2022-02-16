@@ -1,14 +1,17 @@
 import mongoose, { Schema } from 'mongoose';
 
 const schema = new Schema({
-    user: String,
+    user_id: Schema.Types.ObjectId,
     message: {
         type: String,
         required: true
     },
-    date: Date,
+    date: {
+        type: Date,
+        default: Date.now
+    }
 });
 
-const Model = mongoose.model('Message', schema);
+const Message = mongoose.model('message', schema);
 
-export default Model;
+export default Message;
